@@ -1,0 +1,42 @@
+header{
+    position: -webkit-sticky; /* Necessário para funcionar no Safari */
+    position: sticky;
+    top: 0;
+    background-color: rgb(221, 255, 0);
+    padding: 10px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+
+}
+
+#cabeca{
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+
+}
+
+#logo{
+    background-color: chocolate;
+    padding: 10px;
+}
+
+#buscador{
+    padding: 10px;
+    background-color: chocolate;
+    
+}
+
+#login_cart{
+    padding: 10px;
+    background-color: chocolate;
+}
+
+
+

@@ -1,0 +1,26 @@
+#navegacao{
+    display: flex;
+  /*  flex-wrap: wrap;*/
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    margin: 5px;
+
+}
+
+.categoria{
+  background-color: cornflowerblue;
+}
+
+.subcategoria{
+  background-color: powderblue;
+}
+
+.item{
+  background-color:aliceblue;
+  margin: 2px;
+}
+
