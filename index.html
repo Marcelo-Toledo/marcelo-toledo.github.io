@@ -13,26 +13,28 @@
 
     <header>
       <nav>
+        <!--configurar o tabindex="" para os elementos da página-->
 
         <div id="cabeca">
 
-          <div id="logo">
-            <a href="#">
-              <img src="images/logo_com_icone_e_cifra_4560x912.png" alt="logo"  width="300px" height="60px">
+          <div id="logo" width="50px" height="50px">
+            <a href="#" width="50px" height="50px">
+              <img src="images/logo_com_icone_e_cifra_4560x912.png" alt="logo"  width="250px" height="50px">
             </a>
           </div>
 
-          <div id="buscador">
-            <input type="text" placeholder="Buscar...">
+          <div id="buscador" width="50px" height="50px">
+            <input type="text" placeholder="Pesquisa...">
+            <button>Buscar</button>
           </div>
 
-          <div id="login_cart">
-            <a href="#">
-              <img src="images/login.png" alt="login" height="50px" width="50">
+          <div id="login_cart" width="50px" height="50px">
+            <a href="#" width="50px" height="50px">
+              <img id="login" src="images/login.png" alt="login" width="50px" height="50px">
             </a>
 
-            <a href="#">
-              <img src="images/shopping-cart.png" alt="carrinho" height="50px" width="50">
+            <a href="#" width="50px" height="50px">
+              <img id="cart" src="images/shopping-cart.png" alt="carrinho" width="50px" height="50px">
             </a>
           </div>
 
@@ -183,7 +185,19 @@
     </header>
 
     <main>
-      <div id="containerProduto"></div>
+      <div id="containerProduto">
+        <!-- Inserido via javascript:  
+            <div class="product"> 
+                <img>
+                <h2>
+                <p>
+                <div classe="btnProduto">
+                  <button>
+                  <button>
+                </div>
+             </div> 
+        -->
+      </div>
     </main>
 
     <footer>

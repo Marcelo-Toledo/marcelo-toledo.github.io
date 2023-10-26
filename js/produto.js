@@ -9,6 +9,36 @@ var produtos = [
       preco: "R$ 15,00",
       imagemSrc: "images/product/coffee2.jpg"
     },
+    {
+      nome: "Café Especial",
+      preco: "R$ 10,00",
+      imagemSrc: "images/product/coffee1.jpg"
+    },
+    {
+      nome: "Outro Produto",
+      preco: "R$ 15,00",
+      imagemSrc: "images/product/coffee2.jpg"
+    },
+    {
+      nome: "Café Especial",
+      preco: "R$ 10,00",
+      imagemSrc: "images/product/coffee1.jpg"
+    },
+    {
+      nome: "Outro Produto",
+      preco: "R$ 15,00",
+      imagemSrc: "images/product/coffee2.jpg"
+    },
+    {
+      nome: "Café Especial",
+      preco: "R$ 10,00",
+      imagemSrc: "images/product/coffee1.jpg"
+    },
+    {
+      nome: "Outro Produto",
+      preco: "R$ 15,00",
+      imagemSrc: "images/product/coffee2.jpg"
+    },
     // Adicione mais produtos conforme necessário
   ];
 
@@ -19,9 +49,6 @@ var produtos = [
     for (const item of produtos) {
         let divProduto = document.createElement("div");
         divProduto.classList.add("product");
-
-        let divBnt = document.createElement("div");
-        divBnt.classList.add("btnProduto");
     
         let imgProduto = document.createElement("img");
         imgProduto.src = item.imagemSrc;
@@ -32,6 +59,9 @@ var produtos = [
     
         let pProduto = document.createElement("p");
         pProduto.textContent = item.preco
+
+        let divBnt = document.createElement("div");
+        divBnt.classList.add("btnProduto");
     
         let btnProdutoCarrinho = document.createElement("button");
         btnProdutoCarrinho.textContent = "Adicionar ao Carrinho";

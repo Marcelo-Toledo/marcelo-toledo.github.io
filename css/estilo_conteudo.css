@@ -1,12 +1,6 @@
-main {
-    display: flex;
-}
-
 #containerProduto{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .product {
@@ -23,7 +17,11 @@ main {
 }
     
 .product:hover {
-    transform: translateY(-5px);
+    /* bug: ao fazer a animação o elemento de 
+    produtos acaba, sobrepondo os elmentos de itens
+    da navegação. /*
+
+    /*transform: translateY(-5px);*/
 }
 
 .product img {

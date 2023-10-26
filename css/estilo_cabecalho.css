@@ -22,29 +22,86 @@ nav{
 #logo{
     padding-top: 5px;
     padding-left: 5px;
+    border-bottom: 2px solid transparent;
+    border-radius: 2px;
+    transition: border-bottom 0.3s;
+}
+
+#logo:hover{
+    border-bottom: 2px solid #ffa41b;
+}
+
+#buscador{
+    display: flex;
 }
 
 #buscador input{
     width: 100%;
     height: 28px;
     padding: 7px 10px 10px 0;
-    line-height: 15px;
     margin: 0;
-    border: 0;
+    line-height: 15px;
     color: #111;
     background-color: #f5f5f5;
     text-indent: 8px;
     font-size: 16px;
-    border-radius: 5px;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
 
-    
+#buscador input:focus{
+    outline: 0;
+}
+
+#buscador button{
+    background-color: #e5e5e5;
+    border: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#buscador button:hover{
+    background-color: #d2d2d2;
+    transition: background-color 0.3s;
+}
+
+#buscador button:active{
+    background-color: #e5e5e5;
 }
 
 #login_cart{
     padding-top: 5px;
-    padding-right: 5px;
+    padding-right: 20px;
+}
 
+#login_cart a{
+    text-decoration: none;
+    
+}
+
+#login{
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+    border-bottom: 2px solid transparent;
+    transition: background-color 0.3s;
+}
+
+#login:hover{
+    border-bottom: 2px solid #ffa41b;
 }
 
 
+#cart{
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid transparent;
+    transition: background-color 0.3s;
+}
+
+#cart:hover{
+    border-bottom: 2px solid #ffa41b;
+}
 
