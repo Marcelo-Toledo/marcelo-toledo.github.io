@@ -1,38 +1,38 @@
 
 document.addEventListener("DOMContentLoaded", 
 function(){
-    const menus = this.getElementsByClassName("categoria");
+    const menu = this.getElementsByClassName("category");
     
-    for(let i = 0; i < menus.length; i++){
+    for(let i = 0; i < menu.length; i++){
         //alert("for:" + menus.length);
-        let nomeCategoria = menus[i].getElementsByClassName("nome-categoria");
-        let subCategoria = menus[i].getElementsByClassName("subcategoria");
-        let nomeSubCategoria = menus[i].getElementsByClassName("nome-subcategoria") ;
-        let itensSubCategoria = menus[i].getElementsByClassName("item-subcategoria");
+        let categoryName = menu[i].getElementsByClassName("categoryName");
+        let subcategory = menu[i].getElementsByClassName("subcategory");
+        let subcategoryName = menu[i].getElementsByClassName("subcategoryName") ;
+        let subcategory2 = menu[i].getElementsByClassName("subcategory2");
 
-        nomeCategoria[0].addEventListener("click", 
+        categoryName[0].addEventListener("click", 
         function(){ 
-            for(let j = 0; j < subCategoria.length; j++){
+            for(let j = 0; j < subcategory.length; j++){
                 
-                if(subCategoria[j].style.display === "block"){
-                    subCategoria[j].style.display = "none";
+                if(subcategory[j].style.display === "block"){
+                    subcategory[j].style.display = "none";
                 }
                 else{
-                    subCategoria[j].style.display = "block";
+                    subcategory[j].style.display = "block";
                 }
             }
 
-            for(let j = 0; j < subCategoria.length; j++){
-                let nome = nomeSubCategoria[j];
+            for(let j = 0; j < subcategory.length; j++){
+                let name = subcategoryName[j];
                 
-                if(subCategoria[j].contains(itensSubCategoria[j])){
-                    nome.addEventListener("click", 
+                if(subcategory[j].contains(subcategory2[j])){
+                    name.addEventListener("click", 
                     function(){
-                        if(itensSubCategoria[j].style.display === "block"){
-                            itensSubCategoria[j].style.display = "none";
+                        if(subcategory2[j].style.display === "block"){
+                            subcategory2[j].style.display = "none";
                         }
                         else{
-                            itensSubCategoria[j].style.display = "block";
+                            subcategory2[j].style.display = "block";
                         }
                     });
                 }

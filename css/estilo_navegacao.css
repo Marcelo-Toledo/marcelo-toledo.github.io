@@ -1,4 +1,4 @@
-#navegacao{
+#navigation{
     display: flex;
     justify-content: space-evenly;
     background-color: #3f2700;
@@ -12,14 +12,14 @@
     margin: 5px;
 }
 
-.categoria{
+.category{
   padding: 0;
   margin: 0;
   list-style-type: none;
   color: white;
 }
 
-.subcategoria{
+.subcategory{
   display: none;
   padding: 0;
   margin: 0;
@@ -27,12 +27,12 @@
   list-style-type: none;
 }
 
-.nome-subcategoria{
+.subcategoryName{
   padding: 10px;
   list-style-type: none;
 }
 
-.item-subcategoria{
+.subcategory2{
   display: none;
   margin: 0;
   padding: 0;
@@ -40,13 +40,13 @@
   list-style-type: none;
 }
 
-.nome-categoria{
+.categoryName{
   display: block;
   list-style-type: none;
 }
 
 
-.item-menu{
+.categoryItem{
   background-color: #3f2700;
   margin: 0;
   padding: 10px;
@@ -55,12 +55,12 @@
   transition: border-bottom 0.3s;
 }
 
-.item-menu:hover{
+.categoryItem:hover{
   border-bottom: 2px solid #ffa41b;
   background-color: #3f2700;
 }
 
-.item-menu a{
+.categoryItem a{
   text-decoration: none;
   color: greenyellow;
 }
