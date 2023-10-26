@@ -1,4 +1,4 @@
-#containerProduto{
+#containerProduct{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -15,14 +15,13 @@
     width: 300px;
     transition: transform 0.3s ease;
 }
-    
-.product:hover {
-    /* bug: ao fazer a animação o elemento de 
-    produtos acaba, sobrepondo os elmentos de itens
-    da navegação. /*
 
-    /*transform: translateY(-5px);*/
-}
+/* bug: ao fazer a animação o elemento de 
+produtos acaba, sobrepondo os elmentos de itens
+da navegação. /*
+/*.product:hover {
+    transform: translateY(-5px);
+}*/
 
 .product img {
     max-width: 100%;
@@ -45,12 +44,12 @@
 
 }
 
-.btnProduto{
+.btnProduct{
     display: flex;
     justify-content: space-evenly;
 }
 
-.btnProduto button{
+.btnProduct button{
     margin: 5px;
     padding: 8px;
     border-radius: 5px;
@@ -60,11 +59,11 @@
     transition: background-color 0.3s ease;
 }
 
-.btnProduto button:hover{
+.btnProduct button:hover{
     background-color: #555;
 }
 
-.btnProduto button:focus {
+.btnProduct button:focus {
     outline: 0;
     /* outline-color: transparent;
     outline-style: none; */
