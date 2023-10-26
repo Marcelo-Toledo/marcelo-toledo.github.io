@@ -1,0 +1,57 @@
+.user{
+    display: grid;
+    grid-template-areas: 
+    "nav usr usr usr"
+    ;
+    background-color: #ffffff;
+
+}
+
+.userNavigation{
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+}
+
+.userNavigation > span{
+    padding: 20px;
+    font-size:x-large;
+}
+
+.userNavigation a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.userNavigation .active{
+    background-color: #c2c2c2;
+}
+
+.userNavigation a:hover{
+    background-color: #e5e5e5;
+}
+
+.userNavigation .active span{
+    font-weight: bold;
+}
+
+.myProfile{
+    grid-area: usr;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+}
+
+
+
