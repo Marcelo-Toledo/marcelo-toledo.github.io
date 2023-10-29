@@ -1,17 +1,14 @@
 .user{
     display: grid;
     grid-template-areas: 
-    "nav usr usr usr"
-    ;
-    background-color: #ffffff;
-
+    "nav usr usr usr";
 }
 
 .userNavigation{
     grid-area: nav;
     display: flex;
     flex-direction: column;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 10px;
@@ -46,12 +43,129 @@
     grid-area: usr;
     display: flex;
     flex-direction: column;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 20px;
 }
 
+.personalData{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 
+}
 
+.personalData .sideLeft{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0;
+    padding-right: 10px;
+
+}
+
+.personalData .sideRight{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: end;
+
+}
+
+.personalData button{
+    margin: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.personalData button:hover{
+    background-color: #555;
+}
+
+.personalData button:focus{
+    outline: 0;
+}
+
+.userItemPrimary{
+    padding: 0;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.userItemSecondary{
+    padding: 5px;
+    text-indent: 10%;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #121212;
+    border-radius: 5px;
+}
+
+.userInput{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    margin: 10px;
+}
+
+hr{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.userItemAddress{
+    text-indent: 10px;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.imagePurchasesHistory{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.imagePurchasesHistory img{
+    padding: 2px;
+    background-color: #efefef;
+    border-radius: 5px;
+}
+
+.userDataPurchasesHistory{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.userItemPrimaryPurchases{
+    font-weight: bold;
+}
+
+.userItemSecondaryPurchases{
+    color: #4b4b4b;
+    padding-left: 10px;
+}
+
+.userItemPurchasesData{
+    color: rgb(0, 0, 0);
+}
+
+.userPurchaseInformation{
+    padding: 10px;
+}
+
+.userPurchaseDetails{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}

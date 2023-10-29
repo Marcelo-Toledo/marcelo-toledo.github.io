@@ -1,0 +1,175 @@
+.descriptionContainer{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: 
+    "img info"
+    "dtl dtl"
+    "rtg rtg";
+
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+}
+
+.descriptionContainerImg{
+    grid-area: img;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+}
+
+
+.descriptionContainerInfo{
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+}
+
+.descriptionContainerInfoTitle span{
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.descriptionContainerInfoPrice span{
+    font-size: xx-large;
+}
+
+.descriptionContainerInfoButton button{
+    width: 100%;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.descriptionContainerInfoButton button:hover{
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+.descriptionContainerInfoButton button:focus{
+    outline: 0;
+}
+
+.descriptionContainerInfoButton button:active{
+    background-color: #333;
+}
+
+.descriptionContainerInfoShipping{
+    display: flex;
+    flex-direction: column;
+}
+
+.descriptionContainerInfoShippingTitle{
+    font-weight: bold;
+    font-size: large;
+    padding: 10px;
+}
+
+.descriptionContainerInfoShippingCalCEP{
+    display: flex;
+}
+
+.descriptionContainerInfoShippingCalCEP input{
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+}
+
+.descriptionContainerInfoShippingCalCEP button{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.descriptionContainerInfoShippingCalCEP button:hover{
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+.descriptionContainerInfoShippingCalCEP button:focus{
+    outline: 0;
+}
+
+.descriptionContainerInfoShippingCalCEP button:active{
+    background-color: #333;
+}
+
+.descriptionContainerDetails{
+    grid-area: dtl;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+}
+
+.descriptionContainerDetails p{
+    text-align: justify;
+}
+
+
+
+.descriptionContainerDetails table{
+    border-collapse:collapse;
+}
+
+.descriptionContainerDetails td{
+    padding: 10px;
+}
+
+.descriptionContainerDetails .firstTr{
+    background-color: #f3f3f3;
+}
+
+.descriptionContainerDetails .secondTr{
+    background-color: #ffffff;
+}
+
+.descriptionContainerRating{
+    grid-area: rtg;
+    display: flex;
+    flex-direction: column;
+}
+
+.descriptionContainerRating .itemRating{
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+}
+
+.descriptionContainerRating .itemRatingContainer{
+    padding: 0;
+}
+
+.titleItemRating{
+    font-weight: bold;
+}
+
+.commentItemRating p{
+    text-align: justify;
+}
+
+

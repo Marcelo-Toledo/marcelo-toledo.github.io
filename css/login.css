@@ -1,0 +1,55 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+}
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+    background-color: #ffffff;
+}
+
+.loginContainer input{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    margin: 10px;
+}
+
+.titleLogin{
+    align-self: center;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.emailLogin, .passwordLogin{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.loginContainer button{
+    margin: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.loginContainer button:hover{
+    background-color: #555;
+}
+
+.haveAccountLogin{
+    margin: 10px;
+}
