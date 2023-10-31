@@ -1,8 +1,13 @@
-#navigation{
+.navigation{
     display: flex;
     justify-content: space-evenly;
     background-color: #3f2700;
   /*  flex-wrap: wrap;*/
+}
+
+.navigationHidden{
+  justify-content: space-evenly;
+  background-color: #3f2700;
 }
 
 .column{

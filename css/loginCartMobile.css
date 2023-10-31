@@ -1,0 +1,28 @@
+.loginCartMobile{
+    background-color: #3f2700;
+    padding: 0.4em;
+}
+
+.linkLoginMobile{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid transparent;
+    transition: background-color 0.3s;
+}
+
+.linkLoginMobile:hover{
+    border-bottom: 2px solid #ffa41b;
+}
+
+.linkCartMobile{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid transparent;
+    transition: background-color 0.3s;
+}
+
+.linkCartMobile:hover{
+    border-bottom: 2px solid #ffa41b;
+}

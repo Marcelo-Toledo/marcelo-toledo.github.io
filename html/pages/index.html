@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Os mestres do café</title>
-    <link rel="stylesheet" href="css/body.css">
-    <link rel="stylesheet" href="css/homeHeader.css">
-    <link rel="stylesheet" href="css/homeNavigation.css">
-    <link rel="stylesheet" href="css/productCard.css">
-    <link rel="stylesheet" href="css/homeFooter.css">
+    <link rel="stylesheet" href="../../css/body.css">
+    <link rel="stylesheet" href="../../css/homeHeader.css">
+    <link rel="stylesheet" href="../../css/homeNavigation.css">
+    <link rel="stylesheet" href="../../css/productCard.css">
+    <link rel="stylesheet" href="../../css/homeFooter.css">
+    <link rel="stylesheet" href="../../css/media.css">
+    <link rel="stylesheet" href="../../css/loginCartMobile.css">
   </head>
+
   <body>
 
     <header>
@@ -17,31 +20,50 @@
 
         <div id="homeBar">
 
-          <div id="logo" width="50px" height="50px">
-            <a href="#" width="50px" height="50px">
-              <img src="images/logo_com_icone_e_cifra_4560x912.png" alt="logo"  width="250px" height="50px">
+          <div id="logo">
+            <a href="#">
+              <picture>
+                <source media="(max-width: 768px)" srcset="../../images/cup-coffee-logo.png"  width="50px" height="50px"/>
+                <source media="(min-width: 769px)" srcset="../../images/logo_com_icone_e_cifra_4560x912.png"  width="250px" height="50px"/>
+                <img src="../../images/cup-coffee-logo.png" alt="logo"  width="250px" height="50px">
+              </picture>
             </a>
           </div>
 
-          <div id="homeSearch" width="50px" height="50px">
-            <input type="text" placeholder="Pesquisa...">
+          <div id="homeSearch"">
+            <input type="text" placeholder="Pesquisa..." size="4">
             <button>Buscar</button>
           </div>
 
-          <div id="login_cart" width="50px" height="50px">
+          <div id="loginCart">
             <a href="#" width="50px" height="50px">
-              <img id="login" src="images/login.png" alt="login" width="50px" height="50px">
+              <img id="login" src="../../images/login.png" alt="login" width="50px" height="50px">
             </a>
 
             <a href="#" width="50px" height="50px">
-              <img id="cart" src="images/shopping-cart.png" alt="carrinho" width="50px" height="50px">
+              <img id="cart" src="../../images/shopping-cart.png" alt="carrinho" width="50px" height="50px">
             </a>
           </div>
 
+          <div id="menu">
+            <button onclick="openMenu()">
+              <img src="../../images/menu_margin.png" alt="menu" width="50px" height="50px">
+            </button>
+          </div>
 
         </div>
 
-        <div id="navigation">
+        <div class="loginCartMobile" id="myLoginCartTopnav">
+            <a class="linkLoginMobile" href="#" width="50px" height="50px">
+              <img id="loginMobile" src="../../images/login_white.png" alt="login" width="50px" height="50px">
+            </a>
+
+            <a class="linkCartMobile" href="#" width="50px" height="50px">
+              <img id="cartMobile" src="../../images/shopping-cart_white.png" alt="carrinho" width="50px" height="50px">
+            </a>
+        </div>
+
+        <div class="navigation" id="myTopnav">
           
             <div class="column">
               <ul class="category">
@@ -184,28 +206,33 @@
 
     </header>
 
+
+
     <main>
-      <div id="containerProduct">
-        <!-- Inserido via javascript:  
-            <div class="product"> 
-                <img>
-                <h2>
-                <p>
-                <div classe="btnProduto">
-                  <button>
-                  <button>
-                </div>
-             </div> 
-        -->
+      <div class="productMain">
+        <div id="containerProduct">
+         <!-- // Inserido via javascript:  
+           //   <div class="product"> 
+            //      <img>
+            //      <h2>
+           //       <p>
+           //       <div classe="btnProduto">
+           //         <button>
+           //         <button>
+           //       </div>
+           //    </div> -->
+          
+        </div>
       </div>
-    </main>
+    </main> 
 
     <footer>
       <p>&copy; 2023 Os Mestres do Café. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="js/nav.js"></script>
-    <script src="js/product.js"></script>
+    <script src="../../js/nav.js"></script>
+    <script src="../../js/product.js"></script>
+    <script src="../../js/menu.js"></script>
 
   </body>
 </html>
