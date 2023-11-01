@@ -2,42 +2,42 @@ var product = [
     {
       name: "Café Especial",
       price: "R$ 10,00",
-      imageSrc: "../../images/product/coffee1.jpg"
+      imageSrc: "../../images/content/product/coffee1.jpg"
     },
     {
       name: "Outro Produto",
       price: "R$ 15,00",
-      imageSrc: "../../images/product/coffee2.jpg"
+      imageSrc: "../../images/content/product/coffee2.jpg"
     },
     {
       name: "Café Especial",
       price: "R$ 10,00",
-      imageSrc: "../../images/product/coffee1.jpg"
+      imageSrc: "../../images/content/product/coffee1.jpg"
     },
     {
       name: "Outro Produto",
       price: "R$ 15,00",
-      imageSrc: "../../images/product/coffee2.jpg"
+      imageSrc: "../../images/content/product/coffee2.jpg"
     },
     {
       name: "Café Especial",
       price: "R$ 10,00",
-      imageSrc: "../../images/product/coffee1.jpg"
+      imageSrc: "../../images/content/product/coffee1.jpg"
     },
     {
       name: "Outro Produto",
       price: "R$ 15,00",
-      imageSrc: "../../images/product/coffee2.jpg"
+      imageSrc: "../../images/content/product/coffee2.jpg"
     },
     {
       name: "Café Especial",
       price: "R$ 10,00",
-      imageSrc: "../../images/product/coffee1.jpg"
+      imageSrc: "../../images/content/product/coffee1.jpg"
     },
     {
       name: "Outro Produto",
       price: "R$ 15,00",
-      imageSrc: "../../images/product/coffee2.jpg"
+      imageSrc: "../../images/content/product/coffee2.jpg"
     },
     // Adicione mais produtos conforme necessário
   ];
