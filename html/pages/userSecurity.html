@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../../css/navigation/loginCartMobile.css">
     <link rel="stylesheet" href="../../css/navigation/categoryNavigation.css">
 
-    <link rel="stylesheet" href="../../css/content/productCard.css">
+    <link rel="stylesheet" href="../../css/tags/body.css">
+    <link rel="stylesheet" href="../../css/content/user.css">
 
     <link rel="stylesheet" href="../../css/footerBar/homeFooter.css">
     <link rel="stylesheet" href="../../css/media/media.css">
@@ -23,7 +24,7 @@
 
       <nav id="homeBar">
         <div id="logo">
-          <a href="#">
+          <a href="index.html">
             <picture>
               <source media="(max-width: 768px)" srcset="../../images/nav/logo/logo_apenas_icone.png"  width="50px" height="50px"/>
               <source media="(min-width: 769px)" srcset="../../images/nav/logo/logo_com_icone_e_nome_5x1.png"  width="250px" height="50px"/>
@@ -210,19 +211,71 @@
 
 
     <main>
-      <div class="productMain">
-        <div id="containerProduct">
-         <!-- // Inserido via javascript:  
-           //   <div class="product"> 
-            //      <img>
-            //      <h2>
-           //       <p>
-           //       <div classe="btnProduto">
-           //         <button>
-           //         <button>
-           //       </div>
-           //    </div> -->
+      <div class="user">
+        <div class="userNavigation">
+          <span>Minha conta</span>
           
+          <a href="userPersonalData.html">
+            <span>Dados Pessoais</span>
+          </a>
+          <a class="active" href="userSecurity.html">
+            <span>Segurança</span>
+          </a>
+          <a href="userPurchaseHistory.html">
+            <span>Histórico de compras</span>
+          </a>
+          <a href="userAddress.html">
+            <span>Endereço</span>
+          </a>     
+        </div>
+
+        <div class="myProfile">
+
+          <div class="personalData">
+            <div class="sideLeft">
+              <span class="userItemPrimary">Senha</span>
+              <span class="userItemSecondary">***********</span>
+              <input class="userInput" type="password" placeholder="Digite sua senha atual...">
+              <input class="userInput" type="password" placeholder="Digite sua nova senha...">
+              <input class="userInput" type="password" placeholder="Digite novamente...">
+            </div>
+            
+            <div class="sideRight">
+              <button>Alterar</button>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="personalData">
+            <div class="sideLeft">
+              <span class="userItemPrimary">E-mail de recuperação de conta</span>
+              <span class="userItemSecondary">email@example.com</span>
+              <input class="userInput" type="email" placeholder="Digite um novo E-mail...">
+              <input class="userInput" type="email" placeholder="Digite novamente...">
+            </div>
+            
+            <div class="sideRight">
+              <button>Alterar</button>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="personalData">
+            <div class="sideLeft">
+              <span class="userItemPrimary">Telefone</span>
+              <span class="userItemSecondary">(00) 13455-6789</span>
+              <input class="userInput" type="text" placeholder="Digite um novo número...">
+            </div>
+            
+            <div class="sideRight">
+              <button>Alterar</button>
+            </div>
+          </div>
+          
+          </div>
+
         </div>
       </div>
     </main> 
@@ -232,8 +285,6 @@
     </footer>
 
     <script src="../../js/nav.js"></script>
-    <script src="../../js/product.js"></script>
     <script src="../../js/menu.js"></script>
-
   </body>
 </html>

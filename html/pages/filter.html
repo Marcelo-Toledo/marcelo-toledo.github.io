@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../../css/navigation/loginCartMobile.css">
     <link rel="stylesheet" href="../../css/navigation/categoryNavigation.css">
 
-    <link rel="stylesheet" href="../../css/content/productCard.css">
+    <link rel="stylesheet" href="../../css/tags/body.css">
+    <link rel="stylesheet" href="../../css/content/filter.css">
 
     <link rel="stylesheet" href="../../css/footerBar/homeFooter.css">
     <link rel="stylesheet" href="../../css/media/media.css">
@@ -23,7 +24,7 @@
 
       <nav id="homeBar">
         <div id="logo">
-          <a href="#">
+          <a href="index.html">
             <picture>
               <source media="(max-width: 768px)" srcset="../../images/nav/logo/logo_apenas_icone.png"  width="50px" height="50px"/>
               <source media="(min-width: 769px)" srcset="../../images/nav/logo/logo_com_icone_e_nome_5x1.png"  width="250px" height="50px"/>
@@ -210,20 +211,44 @@
 
 
     <main>
-      <div class="productMain">
-        <div id="containerProduct">
-         <!-- // Inserido via javascript:  
-           //   <div class="product"> 
-            //      <img>
-            //      <h2>
-           //       <p>
-           //       <div classe="btnProduto">
-           //         <button>
-           //         <button>
-           //       </div>
-           //    </div> -->
-          
-        </div>
+      <div class="filterContainer">
+        <h1>Resultados da Busca</h1>
+        <div class="searchResults">
+          <div class="filters">
+
+            <div class="filterItem">
+              <label for="sort">Ordenar por:</label>
+              <select id="sort">
+                <option value="relevance">Relevância</option>
+                <option value="price-low">Preço (menor para maior)</option>
+                <option value="price-high">Preço (maior para menor)</option>
+              </select>
+            </div>
+
+            <div class="filterItem">
+              <label for="category">Intensidade:</label>
+              <select id="category">
+                <option value="">Todas as categorias</option>
+                <option value="Suave">Suave</option>
+                <option value="Medio">Médio</option>
+                <option value="Forte">Forte</option>
+              </select>
+            </div>
+
+            <div class="filterItem">
+              <label for="brand">Marca:</label>
+              <select id="brand">
+                <option value="">Todas as marcas</option>
+                <option value="A">marca A</option>
+                <option value="B">marca B</option>
+                <option value="C">marca C</option>
+              </select>
+            </div>
+
+          </div>
+      </div>
+      <div class="result">
+
       </div>
     </main> 
 
@@ -232,8 +257,6 @@
     </footer>
 
     <script src="../../js/nav.js"></script>
-    <script src="../../js/product.js"></script>
     <script src="../../js/menu.js"></script>
-
   </body>
 </html>

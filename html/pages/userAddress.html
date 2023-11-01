@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../../css/navigation/loginCartMobile.css">
     <link rel="stylesheet" href="../../css/navigation/categoryNavigation.css">
 
-    <link rel="stylesheet" href="../../css/content/productCard.css">
+    <link rel="stylesheet" href="../../css/tags/body.css">
+    <link rel="stylesheet" href="../../css/content/user.css">
 
     <link rel="stylesheet" href="../../css/footerBar/homeFooter.css">
     <link rel="stylesheet" href="../../css/media/media.css">
@@ -23,7 +24,7 @@
 
       <nav id="homeBar">
         <div id="logo">
-          <a href="#">
+          <a href="index.html">
             <picture>
               <source media="(max-width: 768px)" srcset="../../images/nav/logo/logo_apenas_icone.png"  width="50px" height="50px"/>
               <source media="(min-width: 769px)" srcset="../../images/nav/logo/logo_com_icone_e_nome_5x1.png"  width="250px" height="50px"/>
@@ -210,19 +211,72 @@
 
 
     <main>
-      <div class="productMain">
-        <div id="containerProduct">
-         <!-- // Inserido via javascript:  
-           //   <div class="product"> 
-            //      <img>
-            //      <h2>
-           //       <p>
-           //       <div classe="btnProduto">
-           //         <button>
-           //         <button>
-           //       </div>
-           //    </div> -->
+      <div class="user">
+        <div class="userNavigation">
+          <span>Minha conta</span>
           
+          <a href="userPersonalData.html">
+            <span>Dados Pessoais</span>
+          </a>
+          <a href="userSecurity.html">
+            <span>Segurança</span>
+          </a>
+          <a href="userPurchaseHistory.html">
+            <span>Histórico de compras</span>
+          </a>
+          <a class="active" href="userAddress.html">
+            <span>Endereço</span>
+          </a>     
+        </div>
+
+        <div class="myProfile">
+
+          <div class="personalData">
+            <div class="sideLeft">
+              <span class="userItemPrimary">Endereço atual</span>
+              <span class="userItemSecondary">{Rua ou avenida}, {Número}, {Cidade}, {CEP}.</span>
+              
+              <div class="changeAddress">
+
+              </div>
+            </div>
+            
+            <div class="sideRight">
+              <button>Mudar</button>
+            </div>
+          </div>
+          <hr>
+
+          <div class="personalData">
+            <div class="sideLeft">
+              <span class="userItemPrimary">Adicionar novo endereço</span>
+              <span class="userItemAddress">Nome completo</span>
+              <input class="userInput" type="text" placeholder="Digite...">
+              <span class="userItemAddress">CEP</span>
+              <input class="userInput" type="text" placeholder="Digite...">
+              <span class="userItemAddress">Estado</span>
+              <input class="userInput" type="text" placeholder="Digite...">
+              <span class="userItemAddress">Cidade</span>
+              <input class="userInput" type="text" placeholder="Digite...">
+              <span class="userItemAddress">Bairro</span>
+              <input class="userInput" type="text" placeholder="Digite...">
+              <span class="userItemAddress">Rua/Avenida</span>
+              <input class="userInput" type="text" placeholder="Digite...">
+              <span class="userItemAddress">Número</span>
+              <input class="userInput" type="text" placeholder="Digite...">
+              <span class="userItemAddress">Complemento (opcional)</span>
+              <input class="userInput" type="text" placeholder="Digite...">
+              <span class="userItemAddress">Telefone de contato</span>
+              <input class="userInput" type="text" placeholder="Digite...">
+            </div>
+            
+            <div class="sideRight">
+              <button>Adicionar</button>
+            </div>
+          </div>
+
+          </div>
+
         </div>
       </div>
     </main> 
@@ -232,8 +286,6 @@
     </footer>
 
     <script src="../../js/nav.js"></script>
-    <script src="../../js/product.js"></script>
     <script src="../../js/menu.js"></script>
-
   </body>
 </html>

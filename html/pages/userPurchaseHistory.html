@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../../css/navigation/loginCartMobile.css">
     <link rel="stylesheet" href="../../css/navigation/categoryNavigation.css">
 
-    <link rel="stylesheet" href="../../css/content/productCard.css">
+    <link rel="stylesheet" href="../../css/tags/body.css">
+    <link rel="stylesheet" href="../../css/content/user.css">
 
     <link rel="stylesheet" href="../../css/footerBar/homeFooter.css">
     <link rel="stylesheet" href="../../css/media/media.css">
@@ -23,7 +24,7 @@
 
       <nav id="homeBar">
         <div id="logo">
-          <a href="#">
+          <a href="index.html">
             <picture>
               <source media="(max-width: 768px)" srcset="../../images/nav/logo/logo_apenas_icone.png"  width="50px" height="50px"/>
               <source media="(min-width: 769px)" srcset="../../images/nav/logo/logo_com_icone_e_nome_5x1.png"  width="250px" height="50px"/>
@@ -210,18 +211,89 @@
 
 
     <main>
-      <div class="productMain">
-        <div id="containerProduct">
-         <!-- // Inserido via javascript:  
-           //   <div class="product"> 
-            //      <img>
-            //      <h2>
-           //       <p>
-           //       <div classe="btnProduto">
-           //         <button>
-           //         <button>
-           //       </div>
-           //    </div> -->
+      <div class="user">
+        <div class="userNavigation">
+          <span>Minha conta</span>
+          
+          <a href="userPersonalData.html">
+            <span>Dados Pessoais</span>
+          </a>
+          <a href="userSecurity.html">
+            <span>Segurança</span>
+          </a>
+          <a class="active" href="userPurchaseHistory.html">
+            <span>Histórico de compras</span>
+          </a>
+          <a href="userAddress.html">
+            <span>Endereço</span>
+          </a>    
+        </div>
+
+        <div class="myProfile">
+
+          <div class="personalData">
+            
+            <div class="imagePurchasesHistory">
+              <img src="../../images/content/product/coffee1.jpg" alt="coffee1" width="150px" height="150px">
+            </div>
+
+            <div class="userDataPurchasesHistory">
+              <div class="userPurchaseInformation">
+                <span class="userItemPrimaryPurchases">24 de setembro de 2023</span>
+                <span class="userItemPurchasesData"></span>
+              </div>
+
+              <div class="userPurchaseInformation">
+                <span class="userItemPrimaryPurchases">Situação: </span>
+                <span class="userItemPurchasesData">Entregue (Recebido no dia 14 de outubro de 2023)</span>
+              </div>
+
+              <div class="userPurchaseInformation">
+                <span class="userItemPrimaryPurchases">Produto: </span>
+                <span class="userItemPurchasesData">Café tradicional 500g</span>
+              </div>
+
+              <div class="userPurchaseInformation">
+                <span class="userItemPrimaryPurchases">Quantidade: </span>
+                <span class="userItemPurchasesData">10 Unidades</span>
+              </div>
+
+              <div class="userPurchaseDetails">
+                <span class="userItemPrimaryPurchases">Detalhes da compra</span>
+                <span class="userItemPurchasesData"></span>
+              </div>
+
+              <div class="userPurchaseDetails">
+                <span class="userItemSecondaryPurchases">Valor do produto: </span>
+                <span class="userItemPurchasesData">R$ 15,00</span>
+              </div>
+
+              <hr>
+              
+              <div class="userPurchaseDetails">
+                <span class="userItemSecondaryPurchases">Valor do frete: </span>
+                <span class="userItemPurchasesData">R$ 20,00</span>
+              </div>
+
+              <hr>
+              
+              <div class="userPurchaseDetails">
+                <span class="userItemSecondaryPurchases">Valor do desconto: </span>
+                <span class="userItemPurchasesData">R$ 10,00</span>
+              </div>
+
+              <hr>
+              
+              <div class="userPurchaseDetails">
+                <span class="userItemSecondaryPurchases">Total da compra: </span>
+                <span class="userItemPurchasesData">R$ 160,00</span>
+              </div>
+              
+            </div>
+            
+
+          </div>
+          <hr>
           
         </div>
       </div>
@@ -232,8 +304,6 @@
     </footer>
 
     <script src="../../js/nav.js"></script>
-    <script src="../../js/product.js"></script>
     <script src="../../js/menu.js"></script>
-
   </body>
 </html>
