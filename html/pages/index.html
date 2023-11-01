@@ -3,206 +3,205 @@
   <head>
     <meta charset="utf-8">
     <title>Os mestres do café</title>
-    <link rel="stylesheet" href="../../css/body.css">
-    <link rel="stylesheet" href="../../css/homeHeader.css">
-    <link rel="stylesheet" href="../../css/homeNavigation.css">
-    <link rel="stylesheet" href="../../css/productCard.css">
-    <link rel="stylesheet" href="../../css/homeFooter.css">
-    <link rel="stylesheet" href="../../css/media.css">
-    <link rel="stylesheet" href="../../css/loginCartMobile.css">
+    
+    <link rel="stylesheet" href="../../css/tags/body.css">
+    <link rel="stylesheet" href="../../css/navigation/homeBar.css">
+    <link rel="stylesheet" href="../../css/navigation/loginCartMobile.css">
+    <link rel="stylesheet" href="../../css/navigation/homeNavigation.css">
+    <link rel="stylesheet" href="../../css/content/productCard.css">
+    <link rel="stylesheet" href="../../css/footerBar/homeFooter.css">
+    <link rel="stylesheet" href="../../css/media/media.css">
+
   </head>
 
   <body>
 
     <header>
-      <nav>
         <!--configurar o tabindex="" para os elementos da página-->
 
-        <div id="homeBar">
-
-          <div id="logo">
-            <a href="#">
-              <picture>
-                <source media="(max-width: 768px)" srcset="../../images/cup-coffee-logo.png"  width="50px" height="50px"/>
-                <source media="(min-width: 769px)" srcset="../../images/logo_com_icone_e_cifra_4560x912.png"  width="250px" height="50px"/>
-                <img src="../../images/cup-coffee-logo.png" alt="logo"  width="250px" height="50px">
-              </picture>
-            </a>
-          </div>
-
-          <div id="homeSearch"">
-            <input type="text" placeholder="Pesquisa..." size="4">
-            <button>Buscar</button>
-          </div>
-
-          <div id="loginCart">
-            <a href="#" width="50px" height="50px">
-              <img id="login" src="../../images/login.png" alt="login" width="50px" height="50px">
-            </a>
-
-            <a href="#" width="50px" height="50px">
-              <img id="cart" src="../../images/shopping-cart.png" alt="carrinho" width="50px" height="50px">
-            </a>
-          </div>
-
-          <div id="menu">
-            <button onclick="openMenu()">
-              <img src="../../images/menu_margin.png" alt="menu" width="50px" height="50px">
-            </button>
-          </div>
-
+      <nav id="homeBar">
+        <div id="logo">
+          <a href="#">
+            <picture>
+              <source media="(max-width: 768px)" srcset="../../images/cup-coffee-logo.png"  width="50px" height="50px"/>
+              <source media="(min-width: 769px)" srcset="../../images/logo_com_icone_e_cifra_4560x912.png"  width="250px" height="50px"/>
+              <img src="../../images/cup-coffee-logo.png" alt="logo"  width="250px" height="50px">
+            </picture>
+          </a>
         </div>
 
-        <div class="loginCartMobile" id="myLoginCartTopnav">
-            <a class="linkLoginMobile" href="#" width="50px" height="50px">
-              <img id="loginMobile" src="../../images/login_white.png" alt="login" width="50px" height="50px">
-            </a>
-
-            <a class="linkCartMobile" href="#" width="50px" height="50px">
-              <img id="cartMobile" src="../../images/shopping-cart_white.png" alt="carrinho" width="50px" height="50px">
-            </a>
+        <div id="homeSearch"">
+          <input type="text" placeholder="Pesquisa..." size="4">
+          <button>Buscar</button>
         </div>
 
-        <div class="navigation" id="myTopnav">
-          
-            <div class="column">
-              <ul class="category">
-                <li class="categoryName categoryItem">CAFE</li>
+        <div id="loginCart">
+          <a href="#" width="50px" height="50px">
+            <img id="login" src="../../images/login.png" alt="login" width="50px" height="50px">
+          </a>
 
-                <ul class="subcategory">
-                  <li class="subcategoryName categoryItem">POR MÉTODO</li>
+          <a href="#" width="50px" height="50px">
+            <img id="cart" src="../../images/shopping-cart.png" alt="carrinho" width="50px" height="50px">
+          </a>
+        </div>
 
-                  <ul class="subcategory2">
-                    <li class="item categoryItem"><a href="#">Grãos</a></li>
-                    <li class="item categoryItem"><a href="#">Moídos</a></li>
-                  </ul>
-                </ul>
+        <div id="menu">
+          <button onclick="openMenu()">
+            <img src="../../images/menu_margin.png" alt="menu" width="50px" height="50px">
+          </button>
+        </div>
+      </nav>
 
-                <ul class="subcategory">
-                  <li class="subcategoryName categoryItem">INTENSIDADE</li>
+      <nav class="loginCartMobile" id="myLoginCartTopnav">
+        <a class="linkLoginMobile" href="#" width="50px" height="50px">
+          <img id="loginMobile" src="../../images/login_white.png" alt="login" width="50px" height="50px">
+        </a>
 
-                  <ul class="subcategory2">
-                    <li class="item categoryItem"><a href="#">Suave</a></li>
-                    <li class="item categoryItem"><a href="#">Média</a></li>
-                    <li class="item categoryItem"><a href="#">Intensa</a></li>
-                  </ul>
-                </ul>
+        <a class="linkCartMobile" href="#" width="50px" height="50px">
+          <img id="cartMobile" src="../../images/shopping-cart_white.png" alt="carrinho" width="50px" height="50px">
+        </a>
+      </nav>
 
-                <ul class="subcategory">
-                  <li class="subcategoryName categoryItem">TIPO</li>
-
-                  <ul class="subcategory2">
-                    <li class="item categoryItem"><a href="#">Aromatizado</a></li>
-                    <li class="item categoryItem"><a href="#">Certificado</a></li>
-                  </ul>
-                </ul>
-
-              </ul>
-            </div>
+      <nav class="categoryNavigation" id="myTopnav">
         
-            <div class="column">
-              <ul class="category">
-                <li class="categoryName categoryItem">CAFETEIRAS</li>
+        <div class="column">
+          <ul class="category">
+            <li class="categoryName categoryItem">CAFE</li>
 
-                <ul class="subcategory">
-                  <li class="subcategoryName categoryItem">MÁQUINAS</li>
+            <ul class="subcategory">
+              <li class="subcategoryName categoryItem">POR MÉTODO</li>
 
-                  <ul class="subcategory2">
-                    <li class="item categoryItem"><a href="#">Máquinas Para Grãos</a></li>
-                    <li class="item categoryItem"><a href="#">Máquinas Para Pó</a></li>
-                    <li class="item categoryItem"><a href="#">Máquinas Para Cápsulas</a></li>
-                  </ul>
-
-                </ul>
+              <ul class="subcategory2">
+                <li class="item categoryItem"><a href="#">Grãos</a></li>
+                <li class="item categoryItem"><a href="#">Moídos</a></li>
               </ul>
-            </div>
-        
-            <div class="column">
-              <ul class="category">
-                <li class="categoryName categoryItem">ACESSÓRIOS</li>
+            </ul>
 
-                <ul class="subcategory">
-                  <li class="subcategoryName categoryItem">MOEDORES</li>
+            <ul class="subcategory">
+              <li class="subcategoryName categoryItem">INTENSIDADE</li>
 
-                  <ul class="subcategory2">
-                    <li class="item categoryItem"><a href="#">Manuais</a></li>
-                    <li class="item categoryItem"><a href="#">Elétricos</a></li>
-                  </ul>
-                </ul>
-  
-                <ul class="subcategory">
-                  <li class="subcategoryName categoryItem"><a href="#">FILTRO DE PAPEL</a></li>
-                </ul>
-  
-                <ul class="subcategory">
-                  <li class="subcategoryName categoryItem"><a href="#">CHALEIRAS</a></li>
-                </ul>
-
+              <ul class="subcategory2">
+                <li class="item categoryItem"><a href="#">Suave</a></li>
+                <li class="item categoryItem"><a href="#">Média</a></li>
+                <li class="item categoryItem"><a href="#">Intensa</a></li>
               </ul>
-            </div>
-        
-            <div class="column">
-              <ul class="category">
-                <li class="categoryName categoryItem">BEBIDAS & GOURMET</li>
-  
-                <ul class="subcategory">
-                  <li class="subcategoryName categoryItem">BEBIDAS</li>
-                    
-                  <ul class="subcategory2">
-                    <li class="item categoryItem"><a href="#">Cappuccinos</a></li>
-                  </ul>
-                </ul>
+            </ul>
 
-  
-                <ul class="subcategory">
-                  <li class="subcategoryName categoryItem">ACOMPANHAMENTO</li>
-                  
-                  <ul class="subcategory2">
-                    <li class="item categoryItem"><a href="#">Chocolates</a></li>
-                  </ul>
-                </ul>
+            <ul class="subcategory">
+              <li class="subcategoryName categoryItem">TIPO</li>
 
-                <ul class="subcategory">
-                  <li class="subcategoryName categoryItem"><a href="#">CHAROPES</a></li>
-                </ul>
-
+              <ul class="subcategory2">
+                <li class="item categoryItem"><a href="#">Aromatizado</a></li>
+                <li class="item categoryItem"><a href="#">Certificado</a></li>
               </ul>
-            </div>
-        
-            <div class="column">
-              <ul class="category">
-                <li class="categoryName categoryItem">MAIS</li>
+            </ul>
 
-                <ul class="subcategory">
-                  <li class="subcategoryName categoryItem">USUÁRIO</li>
+          </ul>
+        </div>
+    
+        <div class="column">
+          <ul class="category">
+            <li class="categoryName categoryItem">CAFETEIRAS</li>
 
-                  <ul class="subcategory2">
-                    <li class="item categoryItem"><a href="#">Informações do Usuário</a></li>
-                    <li class="item categoryItem"><a href="#">Histórico de compra</a></li>
-                  </ul>
-                </ul>
-  
-                <ul class="subcategory">
-                  <li class="subcategoryName categoryItem">INSTITUCIONAL</li>
+            <ul class="subcategory">
+              <li class="subcategoryName categoryItem">MÁQUINAS</li>
 
-                  <ul class="subcategory2">
-                    <li class="item categoryItem"><a href="#">Quem Somos</a></li>
-                  </ul>
-                </ul>
-  
-                <ul class="subcategory">
-                  <li class="subcategoryName categoryItem">SUPORTE E AJUDA</li>
-
-                  <ul class="subcategory2">
-                    <li class="item categoryItem"><a href="#">Central de Atendimento</a></li>
-                    <li class="item categoryItem"><a href="#">Frete e Promoções</a></li>
-                  </ul>
-                </ul>
-
+              <ul class="subcategory2">
+                <li class="item categoryItem"><a href="#">Máquinas Para Grãos</a></li>
+                <li class="item categoryItem"><a href="#">Máquinas Para Pó</a></li>
+                <li class="item categoryItem"><a href="#">Máquinas Para Cápsulas</a></li>
               </ul>
-            </div>
-        
-          </div>
+
+            </ul>
+          </ul>
+        </div>
+    
+        <div class="column">
+          <ul class="category">
+            <li class="categoryName categoryItem">ACESSÓRIOS</li>
+
+            <ul class="subcategory">
+              <li class="subcategoryName categoryItem">MOEDORES</li>
+
+              <ul class="subcategory2">
+                <li class="item categoryItem"><a href="#">Manuais</a></li>
+                <li class="item categoryItem"><a href="#">Elétricos</a></li>
+              </ul>
+            </ul>
+
+            <ul class="subcategory">
+              <li class="subcategoryName categoryItem"><a href="#">FILTRO DE PAPEL</a></li>
+            </ul>
+
+            <ul class="subcategory">
+              <li class="subcategoryName categoryItem"><a href="#">CHALEIRAS</a></li>
+            </ul>
+
+          </ul>
+        </div>
+    
+        <div class="column">
+          <ul class="category">
+            <li class="categoryName categoryItem">BEBIDAS & GOURMET</li>
+
+            <ul class="subcategory">
+              <li class="subcategoryName categoryItem">BEBIDAS</li>
+                
+              <ul class="subcategory2">
+                <li class="item categoryItem"><a href="#">Cappuccinos</a></li>
+              </ul>
+            </ul>
+
+
+            <ul class="subcategory">
+              <li class="subcategoryName categoryItem">ACOMPANHAMENTO</li>
+              
+              <ul class="subcategory2">
+                <li class="item categoryItem"><a href="#">Chocolates</a></li>
+              </ul>
+            </ul>
+
+            <ul class="subcategory">
+              <li class="subcategoryName categoryItem"><a href="#">CHAROPES</a></li>
+            </ul>
+
+          </ul>
+        </div>
+    
+        <div class="column">
+          <ul class="category">
+            <li class="categoryName categoryItem">MAIS</li>
+
+            <ul class="subcategory">
+              <li class="subcategoryName categoryItem">USUÁRIO</li>
+
+              <ul class="subcategory2">
+                <li class="item categoryItem"><a href="#">Informações do Usuário</a></li>
+                <li class="item categoryItem"><a href="#">Histórico de compra</a></li>
+              </ul>
+            </ul>
+
+            <ul class="subcategory">
+              <li class="subcategoryName categoryItem">INSTITUCIONAL</li>
+
+              <ul class="subcategory2">
+                <li class="item categoryItem"><a href="#">Quem Somos</a></li>
+              </ul>
+            </ul>
+
+            <ul class="subcategory">
+              <li class="subcategoryName categoryItem">SUPORTE E AJUDA</li>
+
+              <ul class="subcategory2">
+                <li class="item categoryItem"><a href="#">Central de Atendimento</a></li>
+                <li class="item categoryItem"><a href="#">Frete e Promoções</a></li>
+              </ul>
+            </ul>
+
+          </ul>
+        </div>
+      
+      </nav>
 
     </header>
 

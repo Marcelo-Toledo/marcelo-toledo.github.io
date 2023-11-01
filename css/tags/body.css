@@ -12,6 +12,10 @@ body{
 
 header{
     grid-area: header;
+    position: -webkit-sticky; /* Necessário para funcionar no Safari */
+    position: sticky;
+    top: 0;
+    background-color: rgb(221, 255, 0);
 }
 
 main{

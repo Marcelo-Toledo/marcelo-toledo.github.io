@@ -1,11 +1,11 @@
 function openMenu(){
     
-    let navigation = document.getElementById("myTopnav");
+    let categoryNavigation = document.getElementById("myTopnav");
 
-    if(navigation.className === "navigation"){
-        navigation.className = "navigationHidden"
+    if(categoryNavigation.className === "categoryNavigation"){
+        categoryNavigation.className = "categoryNavigationHidden"
     }else{
-        navigation.className = "navigation"
+        categoryNavigation.className = "categoryNavigation"
     }
 
     let loginCartMobile = document.getElementById("myLoginCartTopnav");

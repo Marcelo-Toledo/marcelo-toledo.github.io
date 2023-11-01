@@ -1,4 +1,5 @@
 @media (min-width: 320px), (max-width: 320px){
+/* Cabeçalho e navegação inicio ==================================================================== */
     header{
         position: static;
     }
@@ -16,7 +17,7 @@
         flex-direction: column;
     }
 
-    .navigationHidden{
+    .categoryNavigationHidden{
         display: none;
     }
 
@@ -27,11 +28,20 @@
     .loginCartMobileHidden{
         display: none;
     }
+
+    .category{
+        align-items: start;
+    }
+
+    .subcategory{
+        background-color: #876939;
+    }
+/* Cabeçalho e navegação fim ==================================================================== */
 }
 
 
 @media (min-width: 480px){
-
+/* Cabeçalho e navegação inicio ==================================================================== */
     header{
         position: static;
     }
@@ -49,7 +59,7 @@
         flex-direction: column;
     }
 
-    .navigationHidden{
+    .categoryNavigationHidden{
         display: none;
     }
 
@@ -60,10 +70,19 @@
     .loginCartMobileHidden{
         display: none;
     }
+
+    .category{
+        align-items: start;
+    }
+
+    .subcategory{
+        background-color: #876939;
+    }
+/* Cabeçalho e navegação fim ==================================================================== */
 }
 
 @media (min-width: 768px){
-
+/* Cabeçalho e navegação inicio ==================================================================== */
     header{
         position: -webkit-sticky; /* Necessário para funcionar no Safari */
         position: sticky;
@@ -82,7 +101,7 @@
         flex-direction: row;
     }
 
-    .navigationHidden{
+    .categoryNavigationHidden{
         display: flex;
     }
 
@@ -94,10 +113,18 @@
         display: none;
     }
 
+    .category{
+        align-items: center;
+    }
+
+    .subcategory{
+        background-color: #87693900;
+    }
+/* Cabeçalho e navegação fim ==================================================================== */
 }
 
 @media (min-width: 1024px){
-
+/* Cabeçalho e navegação inicio ==================================================================== */
     header{
         position: -webkit-sticky; /* Necessário para funcionar no Safari */
         position: sticky;
@@ -116,7 +143,7 @@
         flex-direction: row;
     }
 
-    .navigationHidden{
+    .categoryNavigationHidden{
         display: flex;
     }
 
@@ -128,10 +155,18 @@
         display: none;
     }
 
+    .category{
+        align-items: center;
+    }
+
+    .subcategory{
+        background-color: #87693900;
+    }
+/* Cabeçalho e navegação fim ==================================================================== */
 }
 
 @media (min-width: 1200px){
-
+/* Cabeçalho e navegação inicio ==================================================================== */
     header{
         position: -webkit-sticky; /* Necessário para funcionar no Safari */
         position: sticky;
@@ -150,7 +185,7 @@
         flex-direction: row;
     }
 
-    .navigationHidden{
+    .categoryNavigationHidden{
         display: flex;
     }
 
@@ -161,4 +196,13 @@
     .loginCartMobileHidden{
         display: none;
     }
+
+    .category{
+        align-items: center;
+    }
+
+    .subcategory{
+        background-color: #87693900;
+    }
+/* Cabeçalho e navegação fim ==================================================================== */
 }
