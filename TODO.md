@@ -6,7 +6,9 @@ novos recursos serão adicionados após a montagem do site.
 
 a montagem do site inclui deixa-lo funcional
 
+**Para resolver:**
 
+- [ ] bug no menu: quando para mobile, ajustar o stick
 
 **Novos recursos para implementar:**
 
