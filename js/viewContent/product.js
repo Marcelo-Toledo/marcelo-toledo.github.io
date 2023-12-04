@@ -1,4 +1,4 @@
-var product = [
+const product = [
     {
       name: "Café Especial",
       price: "R$ 10,00",
@@ -41,32 +41,38 @@ var product = [
     },
     // Adicione mais produtos conforme necessário
   ];
+  
+  export const divProductMain = document.createElement("div");
+  divProductMain.classList.add("productMain");
+  
 
-  let productContainer = document.getElementById("containerProduct");
- 
+  const divContainerProduct = document.createElement("div");
+  divContainerProduct.id = "containerProduct";
 
-  document.addEventListener("DOMContentLoaded", function() {
+  divProductMain.appendChild(divContainerProduct);
+
+  export function productView() {
     for (const item of product) {
-        let divProduct = document.createElement("div");
+        const divProduct = document.createElement("div");
         divProduct.classList.add("product");
     
-        let imgProduct = document.createElement("img");
+        const imgProduct = document.createElement("img");
         imgProduct.src = item.imageSrc;
         imgProduct.alt = "Preencher";
     
-        let h2Product = document.createElement("h2");
+        const h2Product = document.createElement("h2");
         h2Product.textContent = item.name;
     
-        let pProduct = document.createElement("p");
+        const pProduct = document.createElement("p");
         pProduct.textContent = item.price
 
-        let divBnt = document.createElement("div");
+        const divBnt = document.createElement("div");
         divBnt.classList.add("btnProduct");
     
-        let btnProductCart = document.createElement("button");
+        const btnProductCart = document.createElement("button");
         btnProductCart.textContent = "Adicionar ao Carrinho";
     
-        let btnProductBuy = document.createElement("button");
+        const btnProductBuy = document.createElement("button");
         btnProductBuy.textContent = "Comprar Agora"
     
         divBnt.appendChild(btnProductCart);
@@ -77,7 +83,7 @@ var product = [
         divProduct.appendChild(pProduct);
         divProduct.appendChild(divBnt);
 
-        productContainer.appendChild(divProduct);
+        divContainerProduct.appendChild(divProduct);
 
       }
-  });
+  }

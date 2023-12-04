@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="../../css/navigation/loginCartMobile.css">
     <link rel="stylesheet" href="../../css/navigation/categoryNavigation.css">
 
+    <link rel="stylesheet" href="../../css/content/cart.css">
+    <link rel="stylesheet" href="../../css/content/login.css">
+
+    <link rel="stylesheet" href="../../css/content/user.css">
+
     <link rel="stylesheet" href="../../css/content/productCard.css">
 
     <link rel="stylesheet" href="../../css/footerBar/homeFooter.css">
@@ -19,221 +24,20 @@
   <body>
 
     <header>
-        <!--configurar o tabindex="" para os elementos da página-->
-
-      <nav id="homeBar">
-        <div id="logo">
-          <a href="#">
-            <picture>
-              <source media="(max-width: 768px)" srcset="../../images/nav/logo/logo_apenas_icone.png"  width="50px" height="50px"/>
-              <source media="(min-width: 769px)" srcset="../../images/nav/logo/logo_com_icone_e_nome_5x1.png"  width="250px" height="50px"/>
-              <img src="../../images/cup-coffee-logo.png" alt="logo"  width="250px" height="50px">
-            </picture>
-          </a>
-        </div>
-
-        <div id="homeSearch"">
-          <input type="text" placeholder="Pesquisa..." size="4">
-          <button>Buscar</button>
-        </div>
-
-        <div id="loginCart">
-          <a href="login.html" width="50px" height="50px">
-            <img id="login" src="../../images/nav/login/login.png" alt="login" width="50px" height="50px">
-          </a>
-
-          <a href="cart.html" width="50px" height="50px">
-            <img id="cart" src="../../images/nav/cart/shopping-cart.png" alt="carrinho" width="50px" height="50px">
-          </a>
-        </div>
-
-        <div id="menu">
-          <button onclick="openMenu()">
-            <img src="../../images/nav/menu/menu_margin.png" alt="menu" width="50px" height="50px">
-          </button>
-        </div>
+      <nav id="containerNavegation">
       </nav>
-
-      <nav class="loginCartMobile" id="myLoginCartTopnav">
-        <a class="linkLoginMobile" href="#" width="50px" height="50px">
-          <img id="loginMobile" src="../../images/nav/login/login_white.png" alt="login" width="50px" height="50px">
-        </a>
-
-        <a class="linkCartMobile" href="#" width="50px" height="50px">
-          <img id="cartMobile" src="../../images/nav/cart/shopping-cart_white.png" alt="carrinho" width="50px" height="50px">
-        </a>
-      </nav>
-
-      <nav class="categoryNavigation" id="myTopnav">
-        
-        <div class="column">
-          <ul class="category">
-            <li class="categoryName categoryItem">CAFE</li>
-
-            <ul class="subcategory">
-              <li class="subcategoryName categoryItem">POR MÉTODO</li>
-
-              <ul class="subcategory2">
-                <li class="item categoryItem"><a href="#">Grãos</a></li>
-                <li class="item categoryItem"><a href="#">Moídos</a></li>
-              </ul>
-            </ul>
-
-            <ul class="subcategory">
-              <li class="subcategoryName categoryItem">INTENSIDADE</li>
-
-              <ul class="subcategory2">
-                <li class="item categoryItem"><a href="#">Suave</a></li>
-                <li class="item categoryItem"><a href="#">Média</a></li>
-                <li class="item categoryItem"><a href="#">Intensa</a></li>
-              </ul>
-            </ul>
-
-            <ul class="subcategory">
-              <li class="subcategoryName categoryItem">TIPO</li>
-
-              <ul class="subcategory2">
-                <li class="item categoryItem"><a href="#">Aromatizado</a></li>
-                <li class="item categoryItem"><a href="#">Certificado</a></li>
-              </ul>
-            </ul>
-
-          </ul>
-        </div>
-    
-        <div class="column">
-          <ul class="category">
-            <li class="categoryName categoryItem">CAFETEIRAS</li>
-
-            <ul class="subcategory">
-              <li class="subcategoryName categoryItem">MÁQUINAS</li>
-
-              <ul class="subcategory2">
-                <li class="item categoryItem"><a href="#">Máquinas Para Grãos</a></li>
-                <li class="item categoryItem"><a href="#">Máquinas Para Pó</a></li>
-                <li class="item categoryItem"><a href="#">Máquinas Para Cápsulas</a></li>
-              </ul>
-
-            </ul>
-          </ul>
-        </div>
-    
-        <div class="column">
-          <ul class="category">
-            <li class="categoryName categoryItem">ACESSÓRIOS</li>
-
-            <ul class="subcategory">
-              <li class="subcategoryName categoryItem">MOEDORES</li>
-
-              <ul class="subcategory2">
-                <li class="item categoryItem"><a href="#">Manuais</a></li>
-                <li class="item categoryItem"><a href="#">Elétricos</a></li>
-              </ul>
-            </ul>
-
-            <ul class="subcategory">
-              <li class="subcategoryName categoryItem"><a href="#">FILTRO DE PAPEL</a></li>
-            </ul>
-
-            <ul class="subcategory">
-              <li class="subcategoryName categoryItem"><a href="#">CHALEIRAS</a></li>
-            </ul>
-
-          </ul>
-        </div>
-    
-        <div class="column">
-          <ul class="category">
-            <li class="categoryName categoryItem">BEBIDAS & GOURMET</li>
-
-            <ul class="subcategory">
-              <li class="subcategoryName categoryItem">BEBIDAS</li>
-                
-              <ul class="subcategory2">
-                <li class="item categoryItem"><a href="#">Cappuccinos</a></li>
-              </ul>
-            </ul>
-
-
-            <ul class="subcategory">
-              <li class="subcategoryName categoryItem">ACOMPANHAMENTO</li>
-              
-              <ul class="subcategory2">
-                <li class="item categoryItem"><a href="#">Chocolates</a></li>
-              </ul>
-            </ul>
-
-            <ul class="subcategory">
-              <li class="subcategoryName categoryItem"><a href="#">CHAROPES</a></li>
-            </ul>
-
-          </ul>
-        </div>
-    
-        <div class="column">
-          <ul class="category">
-            <li class="categoryName categoryItem">MAIS</li>
-
-            <ul class="subcategory">
-              <li class="subcategoryName categoryItem">USUÁRIO</li>
-
-              <ul class="subcategory2">
-                <li class="item categoryItem"><a href="userPersonalData.html">Informações do Usuário</a></li>
-                <li class="item categoryItem"><a href="userPurchaseHistory.html">Histórico de compra</a></li>
-              </ul>
-            </ul>
-
-            <ul class="subcategory">
-              <li class="subcategoryName categoryItem">INSTITUCIONAL</li>
-
-              <ul class="subcategory2">
-                <li class="item categoryItem"><a href="#">Quem Somos</a></li>
-              </ul>
-            </ul>
-
-            <ul class="subcategory">
-              <li class="subcategoryName categoryItem">SUPORTE E AJUDA</li>
-
-              <ul class="subcategory2">
-                <li class="item categoryItem"><a href="#">Central de Atendimento</a></li>
-                <li class="item categoryItem"><a href="#">Frete e Promoções</a></li>
-              </ul>
-            </ul>
-
-          </ul>
-        </div>
-      
-      </nav>
-
     </header>
 
-
-
     <main>
-      <div class="productMain">
-        <div id="containerProduct">
-         <!-- // Inserido via javascript:  
-           //   <div class="product"> 
-            //      <img>
-            //      <h2>
-           //       <p>
-           //       <div classe="btnProduto">
-           //         <button>
-           //         <button>
-           //       </div>
-           //    </div> -->
-          
-        </div>
+      <div id="contentView">
+
       </div>
     </main> 
 
-    <footer>
-      <p>&copy; 2023 Os Mestres do Café. Todos os direitos reservados.</p>
-    </footer>
-
-    <script src="../../js/nav.js"></script>
-    <script src="../../js/product.js"></script>
-    <script src="../../js/menu.js"></script>
-
+    <script  type="module" src="../../js/app.js"></script>
+    <!-- <script src="../../js/nav.js"></script> -->
+    <!-- <script src="../../js/category.js"></script> -->
+    <!-- <script src="../../js/product.js"></script> -->
+  
   </body>
 </html>

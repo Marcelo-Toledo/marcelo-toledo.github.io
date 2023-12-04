@@ -1,7 +1,6 @@
 
-document.addEventListener("DOMContentLoaded", 
-function(){
-    const menu = this.getElementsByClassName("category");
+export function openCloseCategory(){
+    const menu = document.getElementsByClassName("category");
     
     for(let i = 0; i < menu.length; i++){
         //alert("for:" + menus.length);
@@ -44,5 +43,4 @@ function(){
         
     }
 
-});
-
+}
