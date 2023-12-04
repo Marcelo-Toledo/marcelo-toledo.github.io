@@ -21,7 +21,7 @@ loginView.innerHTML = `
   </div>
 
   <div class="haveAccountLogin">
-    <span >Ainda não tem uma conta? <a href="#">Cadastre-se aqui.</a></span>
+    <span >Ainda não tem uma conta? <a id="registerHere" href="#">Cadastre-se aqui.</a></span>
   </div>
 
 </div>

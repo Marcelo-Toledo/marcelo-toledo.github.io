@@ -59,27 +59,28 @@ export function navView() {
           const buttonMenu = document.createElement("button");
           buttonMenu.onclick = function openMenu(){
   
-              let categoryNavigation = document.getElementById("myTopnav");
-          
-              if(categoryNavigation.className === "categoryNavigation"){
-                  categoryNavigation.className = "categoryNavigationHidden"
-              }else{
-                  categoryNavigation.className = "categoryNavigation"
-              }
-          
-              let loginCartMobile = document.getElementById("myLoginCartTopnav");
-          
-              if(loginCartMobile.className === "loginCartMobile"){
-                  loginCartMobile.className = "loginCartMobileHidden"
-              }else{
-                  loginCartMobile.className = "loginCartMobile"
-              }
+            let categoryNavigation = document.getElementById("myTopnav");
+        
+            if(categoryNavigation.className === "categoryNavigation"){
+                categoryNavigation.className = "categoryNavigationHidden"
+            }else{
+                categoryNavigation.className = "categoryNavigation"
+            }
+        
+            let loginCartMobile = document.getElementById("myLoginCartTopnav");
+        
+            if(loginCartMobile.className === "loginCartMobile"){
+                loginCartMobile.className = "loginCartMobileHidden"
+            }else{
+                loginCartMobile.className = "loginCartMobile"
+            }
+
           }
           
-              const imageMenu = document.createElement("img");
-              imageMenu.src = "../../images/nav/menu/menu_margin.png";
-              imageMenu.width = "50";
-              imageMenu.height = "50";
+        const imageMenu = document.createElement("img");
+        imageMenu.src = "../../images/nav/menu/menu_margin.png";
+        imageMenu.width = "50";
+        imageMenu.height = "50";
 
   //==
   //containerNavegation
@@ -259,7 +260,7 @@ export function navView() {
 
             <ul class="subcategory2">
               <li class="item categoryItem"><a id="user" href="#">Informações do Usuário</a></li>
-              <li class="item categoryItem"><a href="#">Histórico de compra</a></li>
+              <li class="item categoryItem"><a id="history" href="#">Histórico de compra</a></li>
             </ul>
           </ul>
 

@@ -3,14 +3,21 @@ import { cartView } from "./viewContent/cart.js";
 import { loginView } from "./viewContent/login.js";
 import { userView, userViewPersonalData, userViewSecurity,
 userViewPurchaseHistory, userViewAddress } from "./viewContent/user.js";
+import { registerView } from "./viewContent/register.js";
+import { descriptionView } from "./viewContent/descrition.js";
+
 const contentView = document.getElementById("contentView");
+
+
 
 export function viewModel(){
     productView();
     contentView.appendChild(divProductMain);
     contentView.appendChild(cartView);
     contentView.appendChild(loginView);
+    contentView.appendChild(registerView)
     contentView.appendChild(userView);
+    contentView.appendChild(descriptionView);
     hideChildren(contentView);
     contentView.children[0].style.display = "flex";
 
@@ -19,7 +26,55 @@ export function viewModel(){
     contentLogin();
     contentUser();
     userData();
+    historyView();
+    contentRegisterLink();
+    contentLoginLink();
+    contentDescriptionProductLink();
 }
+
+    function contentDescriptionProductLink(){
+        const products = document.querySelector("#containerProduct");
+        for(let i = 0; i < products.childElementCount; i++){
+            const id = "#product" + i;
+            const product = document.querySelector(id);
+            product.addEventListener("click", function(){
+                hideChildren(contentView);
+                descriptionView.style.display = "grid";
+            });
+        }
+    }
+
+    function contentRegisterLink(){
+        const register = document.querySelector("#registerHere");
+        register.addEventListener("click", function(){
+            hideChildren(contentView);
+            registerView.style.display = "flex";
+        });
+    }
+
+    function contentLoginLink(){
+        const login = document.querySelector("#loginHere");
+        login.addEventListener("click", function(){
+            hideChildren(contentView);
+            loginView.style.display = "flex";
+        });
+    }
+
+
+  function historyView(){
+    const historyPurchaseLink = document.querySelector("#history");
+    const history = document.querySelector("#historyView");
+    historyPurchaseLink.addEventListener("click", function(){  
+        hideChildren(contentView);
+        userView.style.display = "grid"; 
+        while(userView.childElementCount > 1){
+            userView.removeChild(userView.lastChild);
+        }
+        userView.appendChild(userViewPurchaseHistory);
+        activeUser(history);
+    });
+}
+ 
 
 function userData(){
     const personalData = document.querySelector("#personalView");
@@ -79,9 +134,15 @@ function activeUser(view){
 
 function contentUser(){
     const user = document.querySelector("#user");
+    const personalData = document.querySelector("#personalView");
     user.addEventListener("click", function(){
         hideChildren(contentView);
         userView.style.display = "grid";
+        while(userView.childElementCount > 1){
+            userView.removeChild(userView.lastChild);
+        }
+        userView.appendChild(userViewPersonalData);
+        activeUser(personalData);
     });
 }
 

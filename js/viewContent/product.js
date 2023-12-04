@@ -52,6 +52,7 @@ const product = [
   divProductMain.appendChild(divContainerProduct);
 
   export function productView() {
+    let index = 0;
     for (const item of product) {
         const divProduct = document.createElement("div");
         divProduct.classList.add("product");
@@ -59,6 +60,7 @@ const product = [
         const imgProduct = document.createElement("img");
         imgProduct.src = item.imageSrc;
         imgProduct.alt = "Preencher";
+        imgProduct.id = "product" + index;
     
         const h2Product = document.createElement("h2");
         h2Product.textContent = item.name;
@@ -84,6 +86,6 @@ const product = [
         divProduct.appendChild(divBnt);
 
         divContainerProduct.appendChild(divProduct);
-
+        index++;
       }
   }
