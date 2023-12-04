@@ -81,7 +81,7 @@ function contentUser(){
     const user = document.querySelector("#user");
     user.addEventListener("click", function(){
         hideChildren(contentView);
-        userView.style.display = "flex";
+        userView.style.display = "grid";
     });
 }
 
